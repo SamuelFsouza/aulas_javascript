@@ -2,5 +2,5 @@ const nome = 'Samuel';
 const msg = `Olá, ${nome}. Bem-vindo!`;
 console.log(msg)
 
-nome = "Marcio"
+//nome = ""
 console.log(nome)
