@@ -9,20 +9,6 @@ const catalogo_itens = ['Espada de fogo rasga céus', 'Armadura de titânio', 'P
 
 
 
-
-// Mostra as fichas dos itens
-function FichaDeItens() { 
-    console.log(`|--------------FICHA DE ITENS-----------------|\n`)
-    console.log(`Nome do item:  ${nomeItem}`)
-    console.log(`Preço do item: R$ ${precoItem}`)
-    console.log(`Raridade do item: ${raridade}`)
-    console.log(`Quantidade em estoque: ${estoque}`)
-
-    return (`\n|--------------FICHA DE ITENS-----------------|\n`)
-}
-// Retorna a função FichaDeItens para mostrar o resultado
-console.log(FichaDeItens())
-
 // Verifica se o preço informado é negativo
 if (precoItem < 0) {
     console.log(`O preço do item não pode ser negativo.`)
@@ -44,8 +30,22 @@ const emDestaque = precoItem > 500 ? true : false
 // Verifica se o item possui estoque e preço válido
 const disponibilidade = estoque > 0 && precoItem > 0 ? `Está disponível` : `Não está disponível`
 
+
+// Mostra as fichas dos itens
+function FichaDeItens() { 
+    console.log(`|--------------FICHA DE ITENS-----------------|\n`)
+    console.log(`Nome do item:  ${nomeItem}`)
+    console.log(`Preço do item: R$ ${precoItem}`)
+    console.log(`Raridade do item: ${raridade}`)
+    console.log(`Quantidade em estoque: ${estoque}`)
+
+    return (`\n|--------------FICHA DE ITENS-----------------|\n`)
+}
+// Retorna a função FichaDeItens para mostrar o resultado
+console.log(FichaDeItens())
+
 // Mostra os itens que estão em promoção, apenas itens com o índice par
-for (let 0 = 1; i < 5; i++) {
+for (let i = 1; i <= 5; i++) {
     console.log(`O item ${i} foi cadastrado com sucesso!\n`)
     if (i % 2 === 0) {
         console.log(`O item ${i} está em promoção nessa semana!\n`)
