@@ -38,6 +38,8 @@ function FichaDeItens() {
     console.log(`Preço do item: R$ ${precoItem}`)
     console.log(`Raridade do item: ${raridade}`)
     console.log(`Quantidade em estoque: ${estoque}`)
+    console.log (`Disponibilidade: ${disponibilidade}`)
+    console.log(`Esse item custa mais que 500? ${emDestaque}`)
 
     return (`\n|--------------FICHA DE ITENS-----------------|\n`)
 }
@@ -46,11 +48,16 @@ console.log(FichaDeItens())
 
 // Mostra os itens que estão em promoção, apenas itens com o índice par
 for (let i = 1; i <= 5; i++) {
-    console.log(`O item ${i} foi cadastrado com sucesso!\n`)
+    
     if (i % 2 === 0) {
-        console.log(`O item ${i} está em promoção nessa semana!\n`)
+        console.log(`O item ${i} está cadastrado e está em promoção`)
+    }
+    else {
+        console.log(`O item ${i} foi cadastrado`)
     }
 }
+
+console.log (`|--------------ESTOQUE-----------------|\n`)
 // Exibe a quantidade inicial disponível no estoque
 console.log (`Estoque inicial do item ${nomeItem} : ${estoque} unidades disponiveis\n`)
 // Continua enquanto ainda houver itens no estoque
