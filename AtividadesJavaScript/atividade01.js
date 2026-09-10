@@ -1,14 +1,16 @@
-const nomeItem = []
-const precoItem = []
-let raridade = []
-let estoqueItem = []
+const nomeItem = [`Espada de Fogo`, `Bota de Velocidade`, `Capacete Dourado`, `Peitoral de Fogo`, `Calça Flamejante`]
+const precoItem = [300, 200, 500, 400, 350]
+let raridade = [`Raro`, `Raro`, `Lendário`,`Raro`, `Raro`]
+let estoqueItem = [3, 5, 1, 2, 6]
 const prompt = require(`prompt-sync`)() // Recebe os dados digitados pelo usuário
-let id = []
+let id = [1, 2, 3, 4, 5]
 const finalVetor = 100
 
 
 
 function excluir() { // Function para excluir um item seleciado pelo usuário
+
+    console.clear()
 
         let i = 0
         // Recebe o ID digitado pelo usuário para excluir o item
@@ -18,7 +20,7 @@ function excluir() { // Function para excluir um item seleciado pelo usuário
     for (i = 0; i < finalVetor; i++) { 
 
         if (nomeItem[i] === undefined) {
-            break
+            continue
         }
 
         if (id[i] === itemExclusao){
@@ -71,14 +73,17 @@ function registrar () { // Registra novos itens para o catálogo
         // Recebe quantos itens estão em estoque e transforma em número inteiro
     estoqueItem[i] = parseInt(prompt(`Digite a quantidade em estoque: `))
     id[i] = i + 1
+
+    console.log(`\nItem ${nomeItem[i]} cadastrado com sucesso!\n`)
+    prompt(`Digite ENTER para voltar ao menu principal`)
     
 }
 
-function raridades (){  // Define a raridade de acordo com o preço do item
-    if (precoItem >= 500) { 
+function raridades (precoDoItem){  // Define a raridade de acordo com o preço do item
+    if (precoDoItem >= 500) { 
         return `Lendário` // Se o preço for maior ou igual a 500, o item é lendário
     }
-    else if (precoItem > 100 && precoItem < 500){
+    else if (precoDoItem > 100 && precoDoItem < 500){
         return `Raro` // Se o preço for maior ou igual e menor que 500, o item é raro
     }
     else{
@@ -98,7 +103,7 @@ function listagem() { // Lista de todos os itens cadastrados no catálogo
         // Percorre os itens cadastrados, se encontrar uma posição vazia ele para
 
         if (nomeItem[i] === undefined) {
-            break
+            continue
         }
     
         // Mostra a ficha de cada item cadastrado no catálogo
