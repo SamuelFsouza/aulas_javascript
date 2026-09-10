@@ -14,7 +14,7 @@ function excluir() { // Function para excluir um item seleciado pelo usuário
 
         let i = 0
         // Recebe o ID digitado pelo usuário para excluir o item
-        itemExclusao = parseInt(prompt(`Digite o ID do item que deseja excluir: `))
+       const itemExclusao = parseInt(prompt(`Digite o ID do item que deseja excluir: `))
 
         // Procura o iten no vetor com o ID digitado pelo usuário
     for (i = 0; i < finalVetor; i++) { 
