@@ -1,3 +1,3 @@
 const dobro = n => n * 2;
 
-console.log(`O resultado é: ${dobro(33.5)}`)
+console.log(`O resultado é: ${dobro(.5)}`)
