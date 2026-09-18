@@ -1,4 +1,4 @@
 const isAdulto = n => n >= 18;
 
-console.log (`${isAdulto (21)}`)
-console.log (`${isAdulto (1)}`)
+console.log (`Maioridade: ${isAdulto (21)}`)
+console.log (`Maioridade: ${isAdulto (1)}`)
