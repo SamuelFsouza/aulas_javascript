@@ -1,7 +1,7 @@
 const missoes = [
     {nome: "Derrotar chefe", pontos: 500},
     {nome: "Encontrar tesouro", pontos : 200},
-    {nome: "Saçvar personagem", pontos: 800},
+    {nome: "Salvar personagem", pontos: 800},
     {nome: "Explorar mapa", pontos: 100}
 ];
 
@@ -16,9 +16,9 @@ for (const { nome , pontos } of lista){
         if (pontos >= 500)
             classificacao = "Missão difícil"
         else if (pontos >= 200)
-            classificacao = "Médio"
+            classificacao = "Missão Média"
         else
-        classificacao = "Fácil"
+        classificacao = "Missão Fácil"
 
         console.log(`Missão: ${nome}, Dificuldade: ${classificacao}`)
         
