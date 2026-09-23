@@ -1,12 +1,10 @@
-const transfomar = function (booleanos = [true, false]){
-    const transformando = []
+const calcularGastoTotal=(salarios =[1500]) => {
+  let gastoTotal = 0
 
-    for (const Booleano of booleanos){
-        transformando.push (
-            Booleano === true ? 'Concluído' : 'Pendente')
-    }
+  for (const salario of salarios) {
+    gastoTotal += salario < 2000 ? salario * 1.1 : salario
+  }
 
-    return transformando
-        
+  return gastoTotal
 }
-console.log(transfomar([true]))
+console.log(`Gasto total: ${calcularGastoTotal().toFixed(2)}`) 

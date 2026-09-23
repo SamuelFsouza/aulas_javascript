@@ -1,3 +1,3 @@
-const dobrando = num1 => num1 * 2;
+const loja = valorCompra => valorCompra > 150 ? `Frete grátis` : `Cobrar Frente`
 
-console.log (`O dobro de um número: ${dobrando(5)}`)
+console.log(`Frete: ${loja(160)}`)

@@ -1,8 +1,8 @@
-const listagem = function(nomes = ['Samuel', 'Fortunato', 'de', 'Souza']){
+const roleta = (giros) => {
     
-    for  (const listaNomes of nomes){
-        console.log (listaNomes)
-    }
-
+    do{
+        console.log(`girando a roleta...`)
+        giros++
+}while (giros < 1) 
 }
-listagem()
+roleta(0)

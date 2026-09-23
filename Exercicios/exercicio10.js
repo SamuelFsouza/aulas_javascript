@@ -1,10 +1,3 @@
-const energiaInicial = function(energia){
-   
-    
-    
-    while (energia >= 0){
-        console.log(energia)
-        energia -= 10
-    }
-}
-energiaInicial(100)
+const dobrando = num1 => num1 * 2;
+
+console.log (`O dobro de um número: ${dobrando(5)}`)

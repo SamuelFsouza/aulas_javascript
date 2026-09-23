@@ -1,10 +1,10 @@
-const calcularTotal = function(precos=[]) {
-let total = 0
+function anoBissexto(anoFinal) {
 
-  for (const preco of precos) {
-    total += preco
-}
+    for (let anoInicial = 2000; anoInicial < anoFinal; anoFinal--) {
+        if (anoFinal % 4 == 0){
+            console.log(anoFinal)
+        }
+        }
 
-return total
-}
-console.log (`Resultado: ${calcularTotal(precos=[10, 10, 10, 10])}`)
+    }anoBissexto(2020)
+

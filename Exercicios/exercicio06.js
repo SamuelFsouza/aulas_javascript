@@ -1,11 +1,4 @@
-function estoque(){
-    const estoqueProduto = 4
-
-    if (estoqueProduto < 5){
-        console.log('Estoque em estado crítico')
+const idadePermitidade = function (idade) {
+    return idade >= 18 ? `Permitida` : `Bloqueado`
 }
-    else{
-        console.log ('Estoque Normal')
-    }
-}
-estoque()
+console.log (`Entrada no cinema: ${idadePermitidade(25)}`)

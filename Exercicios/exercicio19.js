@@ -1,10 +1,13 @@
-function anoBissexto(anoFinal) {
+function Robo(distanciaParede) {
+    let passos = 0
 
-    for (let anoInicial = 2000; anoInicial < anoFinal; anoFinal--) {
-        if (anoFinal % 4 == 0){
-            console.log(anoFinal)
-        }
-        }
+    while (true) {
+        passos++
 
-    }anoBissexto(2020)
-
+        if (passos === distanciaParede) {
+            console.log("Bateu e parou!")
+            break
+    }
+  }
+}
+Robo(1000)

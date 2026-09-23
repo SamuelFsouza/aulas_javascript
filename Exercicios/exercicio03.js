@@ -1,3 +1,11 @@
-const real = v => v 
+function estoque(){
+    const estoqueProduto = 4
 
-console.log (`Valor do item: R$${real(5).toFixed(2)}`)
+    if (estoqueProduto < 5){
+        console.log('Estoque em estado crítico')
+}
+    else{
+        console.log ('Estoque Normal')
+    }
+}
+estoque()

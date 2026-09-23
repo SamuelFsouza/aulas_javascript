@@ -1,4 +1,4 @@
-const idadePermitidade = function (idade) {
-    return idade >= 18 ? `Permitida` : `Bloqueado`
+const despedida = (nome) => {
+    return `Até logo ${nome}!`
 }
-console.log (`Entrada no cinema: ${idadePermitidade(25)}`)
+console.log(despedida(`Samuel`))

@@ -1,8 +1,12 @@
-function seguranca (){
+const transfomar = function (booleanos = [true, false]){
+    const transformando = []
 
-    const segredo = "123"
+    for (const Booleano of booleanos){
+        transformando.push (
+            Booleano === true ? 'Concluído' : 'Pendente')
+    }
 
-    return ("Segredo")
-
+    return transformando
+        
 }
-console.log(seguranca())
+console.log(transfomar([true]))

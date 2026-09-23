@@ -1,4 +1,8 @@
-function inicio (){
-    console.log("Bem-vindo ao sistema!")
+function contagem(i,fimContagem){
+
+
+for (i; i <= fimContagem; i++) {
+    console.log(i)
 }
-inicio()
+}
+contagem(1,100)

@@ -1,5 +1,5 @@
-function compras(preco1, preco2) {
-
-    return preco1 + preco2;
+const multiplicacao = function (num1,num2){
+    return num1 * num2;
 }
-console.log (`Soma dos preços: ${compras(9,21)}`)
+
+console.log (`Multiplicação de números: ${multiplicacao(5,3)}`)

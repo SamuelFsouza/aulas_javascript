@@ -1,3 +1,11 @@
-const loja = valorCompra => valorCompra > 150 ? `Frete grátis` : `Cobrar Frente`
+const listaVIP = (nomes=['Samuel'], buscarNome='Samuel') => {
 
-console.log(`Frete: ${loja(160)}`)
+  for (const nome of nomes) {
+    if (nome === buscarNome) {
+      return true
+    }
+  }
+  return false
+}
+
+console.log(`O cliente é vip? ${listaVIP(['Samuel'])} `)

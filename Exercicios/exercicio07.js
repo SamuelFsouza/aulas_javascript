@@ -1,8 +1,10 @@
-function contagem(i,fimContagem){
-
-
-for (i; i <= fimContagem; i++) {
-    console.log(i)
+const energiaInicial = function(energia){
+   
+    
+    
+    while (energia >= 0){
+        console.log(energia)
+        energia -= 10
+    }
 }
-}
-contagem(1,100)
+energiaInicial(100)

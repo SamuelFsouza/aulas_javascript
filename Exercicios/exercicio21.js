@@ -1,10 +1,29 @@
-const calcularGastoTotal=(salarios =[1500]) => {
-  let gastoTotal = 0
+const missoes = [
+    {nome: "Derrotar chefe", pontos: 500},
+    {nome: "Encontrar tesouro", pontos : 200},
+    {nome: "Saçvar personagem", pontos: 800},
+    {nome: "Explorar mapa", pontos: 100}
+];
 
-  for (const salario of salarios) {
-    gastoTotal += salario < 2000 ? salario * 1.1 : salario
-  }
+function analisarMissoes (lista){
 
-  return gastoTotal
-}
-console.log(`Gasto total: ${calcularGastoTotal().toFixed(2)}`) 
+
+    
+for (const { nome , pontos } of lista){
+
+    let classificacao
+
+        if (pontos >= 500)
+            classificacao = "Missão difícil"
+        else if (pontos >= 200)
+            classificacao = "Médio"
+        else
+        classificacao = "Fácil"
+
+        console.log(`Missão: ${nome}, Dificuldade: ${classificacao}`)
+        
+    }
+    }
+
+
+analisarMissoes(missoes)

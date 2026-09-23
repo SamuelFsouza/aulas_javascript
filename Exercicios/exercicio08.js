@@ -1,5 +1,8 @@
-const multiplicacao = function (num1,num2){
-    return num1 * num2;
-}
+const listagem = function(nomes = ['Samuel', 'Fortunato', 'de', 'Souza']){
+    
+    for  (const listaNomes of nomes){
+        console.log (listaNomes)
+    }
 
-console.log (`Multiplicação de números: ${multiplicacao(5,3)}`)
+}
+listagem()
