@@ -1,7 +1,7 @@
-const listaVIP = (nomes=['Samuel'], buscarNome='Samuel') => {
+const listaVIP = (nomesClientes=['Samuel'], buscarNome='Samuel') => {
 
-  for (const nome of nomes) {
-    if (nome === buscarNome) {
+  for (const nomes of nomesClientes) {
+    if (nomes === buscarNome) {
       return true
     }
   }

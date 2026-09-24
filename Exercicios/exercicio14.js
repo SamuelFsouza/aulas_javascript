@@ -7,4 +7,4 @@ let total = 0
 
 return total
 }
-console.log (`Resultado: ${calcularTotal(precos=[10, 10, 10, 10])}`)
+console.log (`Resultado da soma de todos os preços: ${calcularTotal(precos=[70, 1, 9, 120])}`)

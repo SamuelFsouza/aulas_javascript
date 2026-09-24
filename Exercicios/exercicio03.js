@@ -1,5 +1,5 @@
-function estoque(){
-    const estoqueProduto = 4
+function estoque(estoqueProduto){
+    
 
     if (estoqueProduto < 5){
         console.log('Estoque em estado crítico')
@@ -8,4 +8,4 @@ function estoque(){
         console.log ('Estoque Normal')
     }
 }
-estoque()
+estoque(24)

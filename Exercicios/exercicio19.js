@@ -1,13 +1,13 @@
 function Robo(distanciaParede) {
-    let passos = 0
+    let passo = 0
 
     while (true) {
-        passos++
+        passo++
 
-        if (passos === distanciaParede) {
+        if (passo === distanciaParede) {
             console.log("Bateu e parou!")
             break
     }
   }
 }
-Robo(1000)
+Robo(2000)
