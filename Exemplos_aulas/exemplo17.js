@@ -1,1 +1,0 @@
-import { saudacao } from "../utils";
