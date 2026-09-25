@@ -1,3 +1,4 @@
-import { formatacao } from "./utils";
-    
-formatacao()
+import { saudacao, dobro } from '../utils.js';
+
+console.log(saudacao('maria'))
+console.log(dobro(9))
