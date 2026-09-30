@@ -5,10 +5,7 @@ export const dobro = n => n * 2
 
 export const moeda = valor => valor.toFixed(2).replace('.',',') 
     
-export function validarMail (mail, validar){
-    validar = mail.includes('@') && mail.includes('.') ? true : false
-return validar
-}
+export const validarMail = validarMail => validarMail.includes ('@') && validarMail.includes('.') ? true : false
 
 export function dataFormatada(){
    const hoje = new Date()
@@ -22,3 +19,4 @@ export function dataFormatada(){
 return `${dia}/${mes}/${ano}`
 
 }
+
