@@ -14,11 +14,11 @@ const elementosFake = [
 
 const relatorioDeEstilos = []
 
-elementosFake.forEach(tag => {
+elementosFake.forEach(adicionar => {
 
-relatorioDeEstilos.push(tag.tagName)
-relatorioDeEstilos.push(tag.id)
-relatorioDeEstilos.push(tag.style)
+relatorioDeEstilos.push(adicionar.tagName)
+relatorioDeEstilos.push(adicionar.id)
+relatorioDeEstilos.push(adicionar.style)
 
 })
 console.log (relatorioDeEstilos)
