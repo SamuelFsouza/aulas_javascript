@@ -14,5 +14,17 @@ const elementosFake = [
 
 
 
-elementosFake.forEach (validar => for (const id in elementosFake));
+elementosFake.forEach((elemento) => {
+
+  for (let propriedade in elemento) {
+
+    if (propriedade === 'id') {
+      elemento.id = elemento.id < 10? `ID-0${elemento.id} `: `ID-${elemento.id}`;
+    }
+
+  }
+
+});
+
+console.log(elementosFake);
 
