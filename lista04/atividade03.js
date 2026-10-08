@@ -1,5 +1,5 @@
 const carrinho = [25.50, 10.00, 100.00, 5.00]
 
-const total = carrinho.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0)
+const totalCarrinho = carrinho.reduce((precos, valorAtual) => precos + valorFinal, 0)
 
-console.log(total)
+console.log(totalCarrinho)
