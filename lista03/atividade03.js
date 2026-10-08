@@ -15,7 +15,8 @@ elementosFake.forEach(tag => {
 
 for (identificacao in elementosFake){
   if(elementosFake[identificacao].classList.includes('pending')){
-    elementosFake[identificacao].classList = 'done'
+    elementosFake[identificacao].classList = elementosFake[identificacao].classList.filter(classe => classe !== 'pending')
+    elementosFake[identificacao].classList.push('done')
     elementosFake[identificacao].style.color = 'green'
     }
   }
