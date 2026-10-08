@@ -12,14 +12,15 @@ const elementosFake = [
 ];
 
 
-
+let ids = 0
 
 elementosFake.forEach((elemento) => {
 
-  for (const validar in elemento) {
+  for (const identificacao in elemento) {
 
-    if (elementosFake.id === true) {
-      elemento.id = elemento.id < 10? `ID-0${elemento.id} `: `ID-${elemento.id}`;
+    if (identificacao === 'id') {
+     ids += 1
+     elemento[identificacao] = 'ID-' + String(ids).padStart(2,'0')
     }
 
   }
