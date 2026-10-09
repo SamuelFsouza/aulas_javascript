@@ -1,8 +1,8 @@
-const listagem = function(nomes = ['Samuel', 'Fortunato', 'de', 'Souza']){
+const listagem = function(nomes = []){
     
     for  (const listaNomes of nomes){
         console.log (listaNomes)
     }
 
 }
-listagem()
+listagem(['Samuel', 'Fortunato', 'de', 'Souza'])

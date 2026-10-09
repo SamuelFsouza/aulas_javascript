@@ -1,4 +1,4 @@
-const calcularSalario=(salarios =[3000]) => {
+const calcularSalario=(salarios =[]) => {
   let gastoTotal = 0
 
   for (const salario of salarios) {
@@ -7,4 +7,4 @@ const calcularSalario=(salarios =[3000]) => {
 
   return gastoTotal
 }
-console.log(`Gasto total: ${calcularSalario().toFixed(2)}`) 
+console.log(`Gasto total: ${calcularSalario([1500]).toFixed(2)}`) 

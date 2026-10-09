@@ -1,4 +1,4 @@
-const transfomar = function (booleanos = [true, false]){
+const transfomar = function (booleanos = []){
     const transformando = []
 
     for (const Booleano of booleanos){
